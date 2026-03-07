@@ -1,0 +1,166 @@
+/* POPPINS & DANCING SCRIPT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --primary-green: #00ffa2;
+    --secondary-green: #b7fdbe;
+    --secondary-green-fade: #b7fdbe9f;
+    --text-gray: #ffffff85;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* --bs-body-bg: rgb(157, 205, 254); */
+    --bs-body-bg: #000000;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+
+/* CUSTOM CURSOR */
+.custom-cursor {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Smaller outer circle */
+.cursor-ring {
+    position: absolute;
+    width: 33px;
+    /* reduced size */
+    height: 33px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    /* border-1 feel */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Dot */
+.cursor-dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    /* background: rgba(200, 220, 255, 0.9); */
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-content {
+    position: relative;
+    z-index: 1;
+}
+
+.student-card {
+    height: 85%;
+    border: 3px ridge var(--primary-green);
+    border-radius: 13% 50%;
+    background-color: black;
+}
+
+
+button {
+    color: var(--secondary-green);
+    border: 1px solid var(--primary-green);
+    background-color: var(--bs-body-bg);
+}
+
+.jewel-btn,
+.jelwin-btn {
+    box-shadow: 0 0 8px var(--primary-green);
+}
+
+.jewel-btn:active, .jelwin-btn:active {
+    box-shadow: 0 0 4px var(--primary-green);
+}
+
+button:hover {
+    color: var(--secondary-green-fade);
+    transition: all 0.3s ease;
+}
+
+.parents-section {
+    background-color: black;
+    border: 1px dashed var(--primary-green);
+    padding: 80px 30px;
+    color: var(--primary-green);
+}
+
+.accordion .accordion-item {
+    --bs-accordion-border-color: var(--primary-green);
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.form-check-label {
+    color: var(--text-gray);
+}
+
+.accordion-button {
+    color: var(--text-gray);
+
+}
+
+.accordion-button::after {
+    filter: brightness(0) saturate(100%)
+        invert(91%)
+        sepia(6%)
+        saturate(250%)
+        hue-rotate(185deg)
+        brightness(97%)
+        opacity(0.6);
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) saturate(100%)
+        invert(87%)
+        sepia(25%)
+        saturate(550%)
+        hue-rotate(70deg)
+        brightness(105%);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--secondary-green);
+    background-color: transparent;
+    box-shadow: 0 0 8px var(--primary-green);
+}
+
+.progress-text {
+    color: var(--text-gray);
+}
+
+.progress {
+    height: 15px;             
+    border-radius: 50px;
+    overflow: hidden;         
+  }
+  
+  .progress-bar {
+    border-radius: 50px;
+    transition: width 0.4s ease;
+    background-color: var(--primary-green);
+  }
+
+.lesson-name {
+    color: var(--primary-green);
+    color: var(--secondary-green-fade);
+}
+
+.form-check .form-check-input {
+    border-color: #00ffa2;
+    border-color: var(--secondary-green-fade);
+}
+
+.form-check .form-check-input:checked {
+    background-color: #00ffa2;
+    background-color: var(--secondary-green-fade);
+}
